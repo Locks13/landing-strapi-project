@@ -1,5 +1,5 @@
 export default {
   url: 'http://localhost:1337/pages/?slug=',
-  siteName: 'Otávio Miranda',
+  siteName: 'Lucas Toffoli',
   defaultSlug: 'landing-page',
 };

@@ -33,7 +33,7 @@ export const Container = styled.div`
       height: 100vh;
       visibility: hidden;
       opacity: 0;
-      ${visible && menuVisible(theme)}
+      ${visible ? menuVisible(theme): undefined}
 
       > ${SectionContainer} {
         display: grid;

@@ -18,7 +18,7 @@ describe('<Heading />', () => {
   });
 
   it('should render with white color', () => {
-    renderTheme(<Heading colorDark={false}>texto</Heading>);
+    renderTheme(<Heading colordark={false}>texto</Heading>);
     const heading = screen.getByRole('heading', { name: 'texto' });
 
     expect(heading).toHaveStyle({
