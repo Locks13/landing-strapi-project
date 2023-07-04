@@ -26,12 +26,12 @@ function Home() {
 
       try {
         const data = await fetch(
-          // `https://strapi-v4-test.herokuapp.com/api/pages/?filters[slug]=${slug}&populate=deep`,
-          `http://localhost:1337/api/pages?slug=${slug}`
+          `http://localhost:1337/api/pages/?filters[slug]=${slug}&populate[sections][populate]=*`,
         );
         const json = await data.json();
         const { attributes } = json.data[0];
         const pageData = mapData([attributes]);
+        console.log(pageData);
         setData(() => pageData[0]);
       } catch {
         setData(undefined);
