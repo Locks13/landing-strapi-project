@@ -1,9 +1,15 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1
 
-exports[`<SectionContainer /> should render 1`] = `
+exports[`<SectionContainer /> > should render 1`] = `
+.c0 {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 3.2rem;
+}
+
 <div>
   <div
-    class="sc-bdfCkl kIWBaj"
+    class="c0"
   >
     <h1>
       Children
