@@ -26,8 +26,7 @@ function Home() {
 
       try {
         const data = await fetch(
-          // `http://localhost:1337/api/pages/?filters[slug]=${slug}&populate=*`,
-          'http://localhost:1337/api/pages/?slug=landing-page&populate[sections][populate]=*',
+          `http://localhost:1337/api/pages/?filters[slug]=${slug}&populate[sections][populate]=*`,
         );
         const json = await data.json();
         const { attributes } = json.data[0];
